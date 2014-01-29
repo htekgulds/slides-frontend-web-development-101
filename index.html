@@ -1,75 +1,74 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 
-    <title>Modern Web</title>
+		<title>Modern Web</title>
 
-    <meta name="description" content="2013'te Web Sitesi Olmak">
-    <meta name="author" content="Umut Benzer">
+		<meta name="description" content="2013'te Web Sitesi Olmak">
+		<meta name="author" content="Umut Benzer">
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="css/reveal.min.css">
-    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-    <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
-    <script>
-      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-    </script>
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
 
-    <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
-  </head>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
 
-  <body>
+	<body>
 
-    <div class="reveal">
+		<div class="reveal">
 
-      <div class="slides">
-
-        <section>
-          <h1>MODERN WEB</h1>
-          <h3>HTML5 &mdash; CSS3 &mdash; Javascript</h3>
-          <p><a href="http://benzer.me/" target="_blank">Umut Benzer</a></p>
-        </section>
+			<div class="slides">
+				<section>
+					<h1>MODERN WEB</h1>
+					<h3>HTML5 &mdash; CSS3 &mdash; Javascript</h3>
+					<p><a href="http://benzer.me/" target="_blank">Umut Benzer</a></p>
+				</section>
 
         <section>
           <h2>İçerik</h2>
           <ul>
             <li>Sunucu-İstemci mimarisi</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
+            <li>HTML 101</li>
+            <li>CSS 101</li>
+            <li>JavaScript 101</li>
+            <li>jQuery 101</li>
             <li>Diğer teknolojiler</li>
             <li>Örnek uygulamalar</li>
             <li>Kapanış</li>
           </ul>
         </section>
 
-        <section>
+				<section>
           <section>
             <h1>Eskiden...</h1>
-          </section>
+					</section>
 
-          <section>
+					<section>
             <p>Her işi sunucu yapardı...</p>
-            <img src="img/old-hotmail-2.jpg">
-          </section>
+						<img src="img/old-hotmail-2.jpg">
+					</section>
 
           <section>
             <p>Tarayıcının tek görevi önüne geleni göstermekti...</p>
-            <img src="img/ie-old.jpg">
-          </section>
+						<img src="img/ie-old.jpg">
+					</section>
 
           <section>
             <p>Bazen işler yolunda gitmezdi...</p>
@@ -78,36 +77,36 @@
 
           <section>
             <h3>Her yerde hareketli gif'ler vardı...</h3>
-            <p>
+						<p>
               <img src="img/gif-1.gif" class="image">
-            </p>
+						</p>
             <p>
-              <img src="img/gif-2.gif" class="image">
+						  <img src="img/gif-2.gif" class="image">
             </p>
-          </section>
-        </section>
+					</section>
+				</section>
 
         <section>
           <section>
             <h1>Şimdi...</h1>
-          </section>
+					</section>
 
-          <section>
+					<section>
             <p>Siteler artık dinamik ve akıcı.</p>
             <img src="img/gmail-ss.png">
-          </section>
+					</section>
 
           <section>
             <p>Tarayıcılar güçlü.</p>
             <img src="img/browsers-funny-1.jpg">
-          </section>
+					</section>
 
           <section>
             <p>Kullanıcı deneyimi önemli.</p>
-            <a href="http://www.wunderlist.com/" target="_blank"><img src="img/wunderlist.png" class="no-style"></a>
+            <img src="img/wunderlist.png" class="no-style">
             <p><a href="http://www.wunderlist.com/" target="_blank"><small>Wunderlist</small></a></p>
-          </section>
-        </section>
+					</section>
+				</section>
 
         <section data-background="img/owl.jpg">
           <h1 class="fragment">Nasıl oluyor bu site işi?</h1>
@@ -116,56 +115,11 @@
         <section>
           <h3>Sunucu İstemci Mimarisi</h3>
           <img src="img/client-server.jpg"/>
-          <div style="text-align: left;" class="fragment"><strong>İstemci (Client): </strong>Tarayıcı</div>
-          <div style="text-align: left;" class="fragment"><strong>Sunucu (Server): </strong>Bir teknoloji!</div>
-          <div style="text-align: left;" class="fragment"><strong>İstemci</strong> <em>"istek"</em> gönderir. <strong>Sunucu</strong> bunu işler ve <em>cevap</em> gönderir.</div>
+          <p class="fragment"><strong>İstemci (Client): </strong>Tarayıcı (Chrome, Safari, Firefox vs.)</p>
+          <p class="fragment"><strong>Sunucu (Server): </strong>Bir teknoloji!</p>
+          <p class="fragment"><strong>İstemci</strong> <em>"istek"</em> gönderir. <strong>Sunucu</strong> bunu işler ve <em>cevap</em> gönderir.</p>
+          <p class="fragment">Tüm Web bunun üzerine kurulu. Çok çılgın, değil mi?</p>
           <p><small>Görsel: <a href="http://demosthenes.info/blog/137/The-Client-Server-Model" target="_blank">http://demosthenes.info/</a></small></p>
-        </section>
-
-        <section>
-          <h3>Frontend vs. Backend</h3>
-          <div style="text-align: left">
-            <div>Eskiden...</div>
-            <ul>
-              <li>Web "sayfası"</li>
-              <li>Tüm ağırlık sunucuda</li>
-              <li>Tarayıcı "dummy" bir renderer</li>
-            </ul>
-          </div>
-          <div style="text-align: left" class="fragment">
-            <div>Günümüzde</div>
-            <ul>
-              <li>Web "uygulaması"</li>
-              <li>Ağırlık istemcide</li>
-              <li>Sunucular veri işleme ve saklama işi ağırlıklı</li>
-            </ul>
-          </div>
-        </section>
-
-        <section>
-          <h3>Backend Time vs. Frontend Time (1)</h3>
-          <img src="img/frontend-important-1.png">
-          <p>LinkedIn</p>
-          <p><small>Kaynak: <a href="http://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/" target="_blank">stevesouders.com</a></small></p>
-        </section>
-
-        <section>
-          <h3>Backend Time vs. Frontend Time (2)</h3>
-          <img src="img/frontend-important-2.png">
-          <p><small>Kaynak: <a href="http://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/" target="_blank">stevesouders.com</a></small></p>
-        </section>
-
-        <section>
-          <h3>JavaScript'li &amp; JavaScript'siz</h3>
-          <a href="http://www.wunderlist.com/" target="_blank"><img src="img/wunderlist.png" class="no-style"></a>
-          <p><a href="http://www.wunderlist.com/" target="_blank"><small>Wunderlist</small></a></p>
-        </section>
-
-        <section>
-          <h3>Frontend Engineering</h3>
-          <a class="stretch" target="_blank" href="https://www.google.com/about/jobs/search/#t=sq&q=j&d=frontend+software+engineer&li=10&j=frontend+software+engineer&na=JOBS_SEARCH&">
-            <img src="img/google-fe-jobs.png" class="no-style">
-          </a>
         </section>
 
         <section>
@@ -183,44 +137,36 @@
           </table>
         </section>
 
-
-        <section data-transition="linear" data-background-transition="slide">
-          <section data-transition="linear"
-                   data-background="img/html5.jpg" data-background-transition="slide">
-          </section>
-
-          <section>
-            <h3>HTML</h3>
-            <ul>
-              <li>Sayfanın genel yapısını oluşturur.</li>
-              <li>İçerik burada yer alır.</li>
-              <li>Paragraflar, tablolar, fotoğraflar, ses, video vb.</li>
-            </ul>
-          </section>
-          <section>
-            <h3>HTML &mdash; Örnek</h3>
-            <iframe class="stretch" src="http://embed.plnkr.co/XVQerbINKiCEJSIk2H6F/index.html"></iframe>
-          </section>
+        <section data-transition="linear"
+                 data-background="img/html5.jpg" data-background-transition="slide">
         </section>
 
-        <section data-transition="linear" data-background-transition="slide">
+        <section>
+          <h3>HTML</h3>
+          <ul>
+            <li>Sayfanın genel yapısını oluşturur.</li>
+            <li>İçerik burada yer alır.</li>
+            <li>Paragraflar, tablolar, fotoğraflar, ses, video vb.</li>
+          </ul>
+        </section>
+        <section>
+          <h3>HTML &mdash; Örnek</h3>
+          <iframe class="stretch" src="http://embed.plnkr.co/XVQerbINKiCEJSIk2H6F/index.html"></iframe>
+        </section>
 
-          <section data-transition="linear"
-                   data-background="img/nexus7.jpg" data-background-transition="slide">
-            <h1>CSS</h1>
-            <img src="img/css-to-my-html.jpg">
-          </section>
+        <section  data-transition="linear"
+                  data-background="img/nexus7.jpg" data-background-transition="slide">
+          <h1>CSS</h1>
+          <img src="img/css-to-my-html.jpg">
+        </section>
 
+        <section>
           <section>
-            <h3>Bir CSS Kuralı...</h3>
-            <img src="img/cssrule.png">
-          </section>
-          <section>
-            <h3>Örnek</h3>
-            <pre><code data-trim contenteditable class="css">
+            <h3>CSS nasıl bir şey?</h3>
+            <pre class="fragment stretch"><code data-trim contenteditable class="css">
 html, body {
   background: #364B66;
-  font-family: Helvetica, Arial, Sans;
+  font-family: Helvetica, Arial, Sans !important;
 }
 body {
   color: #333333;
@@ -228,24 +174,100 @@ body {
 #header {
   padding: 10px 0;
 }
-img { border: 1px black; }
+img {
+  border: 1px black;
+}
 .special {
   color: red;
 }
 .special:hover {
-  color: blue;
+  color: red;
 }
             </code></pre>
           </section>
-
           <section data-background-transition="slide" data-transition="linear">
             <h3>CSS'siz</h3>
-            <img src="img/yabe-1.jpg">
+            <img src="img/yabe-1.png">
+            <p><small>Kaynak: <a href="http://www.playframework.com/documentation/1.2.3/guide3" target="_blank">Play Framework! Yabe</a></small></p>
           </section>
-
           <section data-background-transition="slide" data-transition="linear">
             <h3>CSS'li</h3>
-            <img src="img/yabe-2.jpg">
+            <img src="img/yabe-2.png">
+          </section>
+       </section>
+       <section>
+          <section>
+            <h2>CSS 101</h2>
+          </section>
+
+          <section>
+            <h3>Bir CSS Kuralı...</h3>
+            <img src="img/cssrule.png">
+          </section>
+
+          <section>
+            <h3>Element Selector</h3>
+            <pre><code data-trim contenteditable class="css">
+p {
+  text-align: center;
+}
+            </code></pre>
+            <p>Tüm <code>p</code> elemanlarını etkiler.</p>
+            <pre><code data-trim contenteditable class="html">
+&lt;p>Bunu etkiler.&lt;/p>
+&lt;img src="...">
+&lt;p>Bunu da.&lt;/p>
+            </code></pre>
+          </section>
+
+          <section>
+            <h3>ID Selector</h3>
+            <pre><code data-trim contenteditable class="css">
+#mySpecialElement: {
+  color: red;
+  font-size: 25px;
+}
+            </code></pre>
+            <p><code>#mySpecialElement</code> id'li elemanı etkiler.</p>
+            <pre><code data-trim contenteditable class="html">
+&lt;p>Etkisiz.&lt/p>
+&lt;p id="mySpecialElement">Ben özelim!&lt/p>
+            </code></pre>
+          </section>
+
+          <section>
+            <h3>Class Selector</h3>
+            <pre><code data-trim contenteditable class="css">
+.error: {
+  color: red;
+  font-weight: bold;
+}
+div.error: {
+  color: yellow;
+}
+            </code></pre>
+            <p>İlki <code>error</code> sınıfına sahip her şeyi, ikincisi <code>error</code> sınıfına sahip <code>div</code> elemanlarını etkiler.</p>
+            <pre><code data-trim contenteditable class="html">
+&lt;p class="error">Ben kırmızı ve koyuyum.&lt;/p>
+&lt;div class="error">Ben sarı ve koyuyum!&lt;/div>
+            </code></pre>
+          </section>
+
+          <section>
+            <h3>ID vs. Class</h3>
+            <ol>
+              <li>Aynı ID'den birden fazla olamaz.</li>
+              <li>Farklı elemanlar aynı sınıfa sahip olabilir.</li>
+              <li>Bir eleman birden fazla sınıfa sahip olabilir.</li>
+            </ol>
+            <pre><code data-trim contenteditable class="html">
+ &lt;div id="header" class="upper-content">
+  I'm the only header in the page!
+&lt;/div>
+&lt;div class="upper-content advertisement">
+  I also have upper-content class. And I also have advertisement class on me!
+&lt;/div>
+            </code></pre>
           </section>
 
           <section>
@@ -271,36 +293,47 @@ span:hover {
 &lt;/div>
             </code></pre>
           </section>
+        </section>
+        <section>
+          <section>
+            <h2>CSS Nasıl kullanılır?</h2>
+          </section>
 
           <section>
-            <h3>CSS Nasıl kullanılır?</h3>
-
-            <div class="fragment">
-              <div style="text-align: left;">Yöntem 1: Bodoslama</div>
-              <pre><code data-trim contenteditable class="html">
+            <h3>Yöntem 1: Bodoslama</h3>
+            <pre><code data-trim contenteditable class="html">
 &lt;p style="color:red">Some red text.&lt;/p>
-              </code></pre>
-            </div>
+            </code></pre>
+            <p class="fragment">Çok tercih edilmez. <strong>Neden?</strong></p>
+            <p class="fragment">Yönetmesi zor.</p>
+          </section>
 
-            <div class="fragment">
-              <div style="text-align: left;">Yöntem 2: Her Sayfada, En Tepede</div>
-              <pre><code data-trim contenteditable class="html">
+          <section>
+            <h3>Yöntem 2: Her Sayfada, En Tepede</h3>
+            <pre><code data-trim contenteditable class="html">
 &lt;head>
   &lt;style type="text/css">
-    p { color: blue; }
+    p {
+      color: blue;
+      font-size: 12px;
+    }
   &lt;/style>
 &lt;/head>
-              </code></pre>
-            </div>
+            </code></pre>
+            <p class="fragment"><strong>Tartışma</strong> &mdash; Avantajlar &amp; Dezavantajlar?</p>
+          </section>
 
-            <div class="fragment">
-              <div style="text-align: left;">Yöntem 3: Ayrı bir stil sayfasında</div>
-              <pre><code data-trim contenteditable class="html">
+          <section>
+            <h3>Yöntem 3: Ayrı bir stil sayfasında</h3>
+            <pre><code data-trim contenteditable class="html">
 &lt;head>
   &lt;link rel="stylesheet" type="text/css" href="style.css">
 &lt;/head>
-              </code></pre>
-            </div>
+            </code></pre>
+            <p class="fragment"><strong>Tartışma</strong> &mdash; Avantajlar &amp; Dezavantajlar?</p>
+            <p class="fragment">Aynı stil dosyası birden fazla sayfada kullanılır.</p>
+            <p class="fragment">Önbellek sayesinde, hız artar, maliyet azalır.</p>
+            <p class="fragment">Büyük projelerde yönetimi kolay.</p>
           </section>
         </seciton>
 
@@ -309,16 +342,30 @@ span:hover {
                data-background="img/twitter-bootstrap.jpg">
       </section>
 
-      <section data-transition="linear" data-background-transition="slide">
-        <section data-transition="linear" data-background-transition="slide"
-               data-background="#F0DB4F">
-          <h1>JavaScript</h1>
-          <img src="img/js-logo.jpg" class="no-style">
+
+      <section data-transition="linear" data-background-transition="slide"
+               data-background="#F0DB4F" data-background-transition="linear" data-background-repeat="repeat" data-background-size="800px">
+        <h1>JavaScript</h1>
+        <img src="img/js-logo.jpg" class="no-style">
+      </section>
+
+      <section>
+        <h3>JavaScript ile ne yapılabilir?</h3>
+        <ul>
+          <li><a href="http://fancyapps.com/fancybox/demo/" target="_blank">Şık fotoğraf göstericileri</a></li>
+          <li><a href="http://ivaynberg.github.io/select2/#basics" target="_blank">Zengin bilgi girişi araçları</a></li>
+          <li><a href="http://isotope.metafizzy.co/" target="_blank">Değişik sayfa yerleşimleri</a></li>
+          <li><em>ve aklınıza başka ne gelirse...</em></li>
+        </ul>
+      </section>
+
+      <section>
+        <section>
+          <h2>JavaScript nasıl kullanılır?</h2>
         </section>
 
         <section>
-          <h3>JavaScript &mdash; Nasıl kullanılır?</h3>
-          <p>HTML içinde</p>
+          <h3>Yöntem 1: Sayfa İçinde</h3>
           <pre><code data-trim contenteditable class="html">
 &lt;html>
 &lt;head>
@@ -334,19 +381,32 @@ span:hover {
 &lt;/body>
 &lt;/html>
             </code></pre>
-            <p>Ayrı dosya ile</p>
+          </section>
+
+          <section>
+            <h3>Yöntem 2: Ayrı bir JavaScript dosyasında</h3>
             <pre><code data-trim contenteditable class="html">
 &lt;script src="javascript.js">&lt;/script>
             </code></pre>
           </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>JavaScript 101</h2>
+            <h3>Değişkenler &amp; Veri Tipleri</h3>
+          </section>
 
           <section>
-            <h3>JavaScript &mdash; Değişkenler &amp; Veri tipleri</h3>
-
+            <h3>Değişkenler</h3>
             <p>Tanımlama</p>
             <pre><code data-trim contenteditable class="javascript">var info;</code></pre>
-
-            <p>Veri Tipleri</p>
+            <p>Değer atama</p>
+            <pre><code data-trim contenteditable class="javascript">var info2 = 'JavaScript iyidir!';</code></pre>
+            <pre><code data-trim contenteditable class="javascript">info = 'JavaScript iyidir!';</code></pre>
+          </section>
+          <section>
+            <h3>Veri tipleri</h3>
             <pre><code data-trim contenteditable class="javascript">
 var aString = "Bu bir stringtir."; /* Tek ya da çift tırnak olabilir. */
 var aNumber = 12; /* Bu bir sayıdır */
@@ -357,7 +417,7 @@ var aNull = null; /* Değerinin olmaması bir değerdir. */
             </code></pre>
           </section>
           <section>
-            <h3>JavaScript &mdash; Diziler</h3>
+            <h3>Diziler</h3>
             <pre><code data-trim contenteditable class="javascript">
 var anEmptyArray = [];
 var cars = ['Dacia', 'Renault', 'Opel'];
@@ -370,7 +430,7 @@ animals.pop(); /* returns Honda */
           </section>
 
           <section>
-            <h3>JavaScript &mdash; Veri Tipleri ve Eşitlik</h3>
+            <h3>Veri Tipleri ve Eşitlik</h3>
             <pre><code data-trim contenteditable class="javascript">
 var one = 1; /* Number 1 */
 var oneS = "1"; /* String 1 */
@@ -384,8 +444,31 @@ one !== oneS /* true */
           </section>
 
           <section>
-            <h3>JavaScript &mdash; Fonksiyonlar</h3>
+            <h3>Özellikler</h3>
+            <ul>
+              <li>Özel bir tip tanımlaması yok.</li>
+              <li>İsimler harf, <code>_</code> veya <code>$</code> ile başlar.</li>
+              <li>Harf rakam <code>_</code> ve <code>$</code> içerir</li>
+              <li>Büyük/küçük harf önemli.</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>JavaScript 101</h2>
+            <h3>Fonksiyonlar</h3>
+          </section>
+          <section>
+            <h3>Nasıl tanımlanır?</h3>
             <pre><code data-trim contenteditable class="javascript">
+/* Yöntem 1 */
+function myFunction(name) {
+  alert('hello' + name);
+}
+myFunction(name); /* Kullanım */
+
+/* Yöntem 2 */
 var sayHello = function(name) { alert("Hello " + name); };
 var sayHi = function(name) { alert("Hi " + name); };
 
@@ -398,7 +481,7 @@ myFunction2(name);  /* Hi Umut. */
           </section>
 
           <section>
-            <h3>JavaScript &mdash; İç içe fonksiyonlar</h3>
+            <h3>İç içe fonksiyonlar</h3>
             <p>Dıştaki değişkenler, içeride kullanılabilir.</p>
             <pre><code data-trim contenteditable class="javascript">
 var user = "umut";
@@ -413,11 +496,49 @@ setAlarm("Uyan kardeş sabah oldu!", 100);
 // handle() Erişilemez.
   </code></pre>
           <p><small>Daha fazlası için: <a href="http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html" target="_blank">http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html</a> ve <a href="http://howtonode.org/why-use-closure" target="_blank">http://howtonode.org/why-use-closure</a></small></p>
+          <p class="fragment">Değişken kapsamları <b>fonksiyon başına</b> hesaplanır.</p>
           </section>
 
           <section>
-            <h3>JavaScript &mdash; Nesneler</h3>
-            <pre class="stretch"><code data-trim contenteditable class="javascript">
+            <h3>Değişkenlerin geçerlilik kapsamları</h3>
+            <p class="fragment">Değişken kapsamları <b>fonksiyon başına</b> hesaplanır.</p>
+            <pre><code data-trim contenteditable class="javascript">
+var name1 = "a";
+var aFunction = function(condition) {
+  var name1 = "c";
+  if(condition) {
+    var name2 = "b";
+  }
+  alert(name2)
+}
+aFunction(true);
+alert(name1);
+            </code></pre>
+          </section>
+
+          <section>
+            <h3>Kendi kendini çalıştıran fonksyionlar</h3>
+            <pre><code data-trim contenteditable class="javascript">
+(function(){
+  var foo = 'Hello';
+  var bar = 'World!'
+
+  function baz(){
+  return foo + ' ' + bar;
+  }
+})();
+            </code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>JavaScript 101</h2>
+            <h3>Nesneler</h3>
+          </section>
+          <section>
+            <h3>Bir nesne...</h3>
+            <pre><code data-trim contenteditable class="javascript">
 var myObject = {
   myProperty: 'hello i am string',
   aNumberProperty: 12,
@@ -430,15 +551,39 @@ var myObject = {
     return this;
   }
 }
-
-myObject.myProperty;
-myObject['myProperty'];
-myObject.myMethod();
-
-delete myObject.myProperty;
-myObject.theNewOne = "Hello, I am new!";
             </code></pre>
           </section>
+        <section>
+          <h3>Nesnelere erişim</h3>
+          <pre><code data-trim contenteditable class="javascript">
+var car = {
+  brand: 'Ford',
+  model: 'Fiesta'
+};
+
+console.log(car.brand);
+console.log(car['model']);
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Nesneler sonradan genişletilebilir</h3>
+          <pre><code data-trim contenteditable class="javascript">
+var myObj = {
+  one: "example 1",
+  two: {
+    twoOne: "example 2.1",
+    twoTwo: "example 2.2"
+  },
+  tree: "example 3"
+};
+
+delete myObj.tree;
+myObj.four = "example 4";
+myObj.two.twoOne = "example 2.1.3";
+/* myObj.five.one = NOT POSSIBLE! */
+          </code></pre>
+        </section>
       </section>
 
       <section>
@@ -446,10 +591,12 @@ myObject.theNewOne = "Hello, I am new!";
           <h3>Document Object Model</h3>
           <p><em>JavaScript'in HTML ile buluştuğu yer...</em></p>
           <ul>
+            <li class="fragment">Bir dizi JavaScript nesnesidir.</li>
             <li class="fragment">HTML'in JavaScript üzerindeki yansıması olarak düşünülebilir.</li>
-            <li class="fragment">Bir <strong>ağaç</strong> şeklindedir.</li>
-            <li class="fragment">Web sayfası üzerinde DOM aracılığıyla değişiklik yapılabilir.</li>
-            <li class="fragment">DOM, tarayıcı tarafından sağlanır.</li>
+            <li class="fragment">Tarayıcı tarafından sağlanır.</li>
+            <li class="fragment">Web sayfası DOM ile izlenebilir ve üzerinde değişiklik yapılabilir.</li>
+            <li class="fragment">Tüm HTML elementleri DOM ağacının bir parçasıdır. </li>
+            <li class="fragment">HTML elementlerinin attributeları ve eventleri vardır.</li>
           </ul>
         </section>
         <section data-transition="linear" data-background-transition="slide">
@@ -463,19 +610,26 @@ myObject.theNewOne = "Hello, I am new!";
           <p>JavaScript ile DOM'a erişmek ve DOM'u modifiye etmek için bazı nesneler vardır:</p>
           <p>&nbsp;</p>
           <p><code>window</code>, <code>document</code>...</p>
-          <div class="fragment">
+          <pre><code data-trim contenteditable class="javascript">
+document.body
+document.URL
+window.location
+          </code></pre>
+          <p><small>
+            <a href="https://developer.mozilla.org/en-US/docs/DOM/DOM_Reference" target="_blank">https://developer.mozilla.org/en-US/docs/DOM/DOM_Reference</a>
+          </small></p>
+        </section>
+
+        <section>
+          <h3>Örnek</h3>
           <pre><code data-trim contenteditable class="html">
-&lt;div class="mySpecialClass">Div 1&lt;/div>
-&lt;div id="myId" class="mySpecialClass">Div 2&lt;/div>
+&lt;div id="myElement">This a div id'd myElement&lt;/div>
           </code></pre>
           <pre><code data-trim contenteditable class="javascript">
-var item = document.getById('myId');
+var item = document.getElementById('myitem');
 item.style.color = 'red';
-
-document.getElementsByClassName('mySpecialClass');
-/* Bu Internet Explorer 8'de çalışmaz. */
+document.body.innerHTML = '<p>Tüm sayfayı değiştirdim.</p>';
           </code></pre>
-          </div>
         </section>
       </section>
 
@@ -487,9 +641,10 @@ document.getElementsByClassName('mySpecialClass');
       <section>
         <h3>Cross Browser &mdash; Sıkıntılar</h3>
         <ul>
-          <li class="fragment">Sunulan özellikler ve kullanım yöntemleri tarayıcılar arasında değişkenlik gösterir.<small>* özellikle eski tarayıcılarda</small></li>
+          <li class="fragment"><em>(Maalesef) sunulan özellikler tarayıcılar ve kullanım yöntemleri (özellikle eski tarayıcılar) arasında değişkenlik gösterir.</em> :(</li>
           <li class="fragment">Kodda farklı tarayıcılar için bir çok if then else görülmeye başlanır.</li>
           <li class="fragment">Uygulama yazmak tarayıcılarla savaşmak haline gelir.</li>
+          <li class="fragment">DOM'a erişmek zor ve karmaşık hale gelebilir.</li>
         </ul>
         <pre class="fragment"><code data-trim contenteditable class="javascript">
 var xmlhttp;
@@ -503,155 +658,91 @@ if (window.XMLHttpRequest) {
         </code></pre>
       </section>
 
-      <section data-transition="linear" data-background-transition="slide">
-        <section data-transition="linear" data-background-transition="slide"
-               data-background="#FFF">
-           <img src="img/jquery.png" class="no-style">
-        </section>
 
+      <section data-transition="linear" data-background-transition="slide"
+             data-background="#FFF" data-background-transition="linear">
+         <img src="img/jquery.png" class="no-style">
+      </section>
 
-        <section>
+      <section>
+        <section class="present" data-index-h="3" style="display: block;">
           <h3>jQuery nedir?</h3>
           <p class="fragment">Bir JavaScript kütüphanesidir.</p>
           <ul>
             <li class="fragment">Cross browser fonksiyonlar</li>
-            <li class="fragment">Güçlü selectorler</li>
             <li class="fragment">Kolay kullanım</li>
-            <li class="fragment">Güçlü event handling</li>
           </ul>
-          <p class="fragment"><a href="http://api.jquery.com/" target="_blank">Yüzlerce metod sunar.</a></p>
         </section>
 
         <section>
-          <h3>jQuery &mdash; Cross Browser</h3>
-          <pre><code data-trim contenteditable class="html">
-&lt;div class="mySpecialClass">Div 1&lt;/div>
-&lt;div class="mySpecialClass">Div 2&lt;/div>
-          </code></pre>
-
-          <div class="fragment">
-            <p>Bunu...</p>
-            <pre><code data-trim contenteditable class="javascript" style="max-height: 150px;">
-var mySpecials = document.getElementsByClassName('mySpecialClass');
-for(var i=0; i&lt;mySpecials.length; i++) {
-  mySpecials[i].style.color = 'red';
-}
-
-
-
-/*
-  Developed by Robert Nyman, http://www.robertnyman.com
-  Code/licensing: http://code.google.com/p/getelementsbyclassname/
-*/
-var getElementsByClassName = function (className, tag, elm){
-  if (document.getElementsByClassName) {
-    getElementsByClassName = function (className, tag, elm) {
-      elm = elm || document;
-      var elements = elm.getElementsByClassName(className),
-        nodeName = (tag)? new RegExp("\\b" + tag + "\\b", "i") : null,
-        returnElements = [],
-        current;
-      for(var i=0, il=elements.length; i&lt;il; i+=1){
-        current = elements[i];
-        if(!nodeName || nodeName.test(current.nodeName)) {
-          returnElements.push(current);
-        }
-      }
-      return returnElements;
-    };
-  }
-  else if (document.evaluate) {
-    getElementsByClassName = function (className, tag, elm) {
-      tag = tag || "*";
-      elm = elm || document;
-      var classes = className.split(" "),
-        classesToCheck = "",
-        xhtmlNamespace = "http://www.w3.org/1999/xhtml",
-        namespaceResolver = (document.documentElement.namespaceURI === xhtmlNamespace)? xhtmlNamespace : null,
-        returnElements = [],
-        elements,
-        node;
-      for(var j=0, jl=classes.length; j&lt;jl; j+=1){
-        classesToCheck += "[contains(concat(' ', @class, ' '), ' " + classes[j] + " ')]";
-      }
-      try  {
-        elements = document.evaluate(".//" + tag + classesToCheck, elm, namespaceResolver, 0, null);
-      }
-      catch (e) {
-        elements = document.evaluate(".//" + tag + classesToCheck, elm, null, 0, null);
-      }
-      while ((node = elements.iterateNext())) {
-        returnElements.push(node);
-      }
-      return returnElements;
-    };
-  }
-  else {
-    getElementsByClassName = function (className, tag, elm) {
-      tag = tag || "*";
-      elm = elm || document;
-      var classes = className.split(" "),
-        classesToCheck = [],
-        elements = (tag === "*" && elm.all)? elm.all : elm.getElementsByTagName(tag),
-        current,
-        returnElements = [],
-        match;
-      for(var k=0, kl=classes.length; k&lt;kl; k+=1){
-        classesToCheck.push(new RegExp("(^|\\s)" + classes[k] + "(\\s|$)"));
-      }
-      for(var l=0, ll=elements.length; l&lt;ll; l+=1){
-        current = elements[l];
-        match = false;
-        for(var m=0, ml=classesToCheck.length; m&lt;ml; m+=1){
-          match = classesToCheck[m].test(current.className);
-          if (!match) {
-            break;
-          }
-        }
-        if (match) {
-          returnElements.push(current);
-        }
-      }
-      return returnElements;
-    };
-  }
-  return getElementsByClassName(className, tag, elm);
-};
-            </code></pre>
-          </div>
-          <div class="fragment">
-            <p>Buna dönüştürür.</p>
-            <pre><code data-trim contenteditable class="javascript">
-              $(".mySpecialClass").css("color","red");
-            </code></pre>
-          </div>
-        </section>
-
-        <section>
-          <h3>jQuery &mdash; Güçlü Selectorler</h3>
-          <pre class="fragment"><code data-trim contenteditable class="javascript">
-  var something = $("div")
-    .children("p.class1")
-    .find("h1.class2")
-    .filter(".class3")
-    .find("myHeader")
-    .parent()
-    .siblings("div.class3")
-    .find("*");
-
-  /* Amcasının oğlunun eltisinin kaynının dedesinin
-     komşusunun Ankara'daki kızının üçüncü kuzeni... */
-          </code></pre>
-        </section>
-
-        <section>
-          <h3>jQuery &mdash; Kolay Kullanım</h3>
+          <h3>Nasıl kullanılır?</h3>
+          <p class="fragment">Web sayfanıza eklersiniz.</p>
           <pre class="fragment"><code data-trim contenteditable class="html">
-&lt;img id="mainpicture" src="http://www.nokia.com/logo.png">
-&lt;div id="results">Sonuç bulunamadı.!&lt;/div>
-&lt;div>Sonuç mu? Ne sonucu? Sonuç ne arar la bazarda?&lt;/div>
+&lt;head>
+  &lt;script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js">&lt;/script>
+&lt;/head>
           </code></pre>
-          <pre class="fragment stretch"><code data-trim contenteditable class="javascript">
+          <p class="fragment"><small>İndirip eklemek vs. CDN kullanmak</small></p>
+        </section>
+
+        <section>
+          <h3>jQuery ile yapılabilecekler</h3>
+          <ol>
+            <li class="fragment">AJAX</li>
+            <li class="fragment">Attribute manipülasyonu</li>
+            <li class="fragment">CSS manipülasyonu</li>
+            <li class="fragment">DOM'da gezinti</li>
+            <li class="fragment">DOM manipülasyonu</li>
+            <li class="fragment">Efektler</li>
+            <li class="fragment">Eventler</li>
+            <li class="fragment">Form yönetimi</li>
+            <li class="fragment">Selectorler</li>
+            <li class="fragment">Utilities</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>jQuery yüzlerce metod sunar.</h3>
+          <a href="http://api.jquery.com/" target="_blank"><img src="img/jquery-small.jpg"></a>
+        </section>
+
+      </section>
+
+      <section>
+        <h3>jQuery Selectorleri</h3>
+        <p><del><code>document.getElementById()</code>, <code>document.getElementsByTagName()</code></del>, bunları unutun!</p>
+        <p class="fragment">jQuery selectorleri: Kolay, cross browser</p>
+        <pre class="fragment"><code data-trim contenteditable class="javascript">
+var divs = $("div"); // Sayfadaki tüm div'ler
+
+var img = $("#header"); // header id'sine sahip element
+
+var images = $(".picture"); // picture class'ına sahip tüm elementler
+        </code></pre>
+      </section>
+
+      <section>
+        <h3>jQuery Selectorleri: Adrese Teslim</h3>
+        <pre class="fragment"><code data-trim contenteditable class="javascript">
+var something = $("div")
+  .children("p.class1")
+  .find("h1.class2")
+  .filter(".class3")
+  .parent()
+  .siblings("div.class3")
+  .find("*");
+
+/* Amcasının oğlunun eltisinin kaynının dedesinin
+   komşusunun Ankara'daki kızının üçüncü kuzeni... */
+        </code></pre>
+      </section>
+
+      <section>
+        <h3>Attribute'lar ve CSS'le oynamak</h3>
+        <pre class="fragment"><code data-trim contenteditable class="html">
+&lt;img id="mainpicture" src="http://www.nokia.com/logo.png">
+        </code></pre>
+        <pre class="fragment"><code  data-trim contenteditable class="javascript">
 var img = $('#mainpicture');
 img.attr('src'); /* returns http://www.nokia.com/logo.png */
 img.attr('src', 'http://www.microsoft.com/logo.png');
@@ -660,33 +751,80 @@ img.css('width');
 img.css('width', '200px');
 
 img.addClass("newlogo");
+        </code></pre>
+        <p class="fragment">Hokus pokus!</p>
+        <pre class="fragment"><code data-trim contenteditable class="html">
+&lt;img id="mainpicture" class="newlogo" src="http://www.microsoft.com/logo.png" style="width: 200px;">
+        </code></pre>
+      </section>
 
+      <section>
+        <h3>HTML ile oynamak</h3>
+        <pre class="fragment"><code data-trim contenteditable class="html">
+&lt;div id="results">Sonuç bulunamadı.!&lt;/div>
+&lt;div>Sonuç mu? Ne sonucu? Sonuç ne arar la bazarda?&lt;/div>
+        </code></pre>
+        <pre class="fragment"><code data-trim contenteditable class="javascript">
 var resultDiv = $('#results');
 resultDiv.html(); /* returns "Sonuç bulunamadı.!" */
 resultDiv.html('12 sonuç bulundu.');
 
 $("div").not(resultDiv).remove();
+        </code></pre>
+        <p class="fragment">Hokus Pokus!</p>
+        <pre class="fragment"><code data-trim contenteditable class="html">
+&lt;div id="results">12 sonuç bulundu.&lt;/div>
+        </code></pre>
+        <p class="fragment"><small>XSS?</small></p>
+      </section>
 
+      <section>
+        <h3>Yeni bir element yaratmak</h3>
+        <pre class="fragment"><code data-trim contenteditable class="html">
+&lt;body>&lt;/body>
+        </code></pre>
+        <pre class="fragment"><code data-trim contenteditable class="javascript">
 $('&lt;div>&lt;/div>')
   .attr("id", "myPrecious")
   .text("You shall not pass!")
   .appendTo($(body));
-          </code></pre>
-        </section>
-
-        <section>
-          <h3>jQuery &mdash; Event Handling (1)</h3>
-          <div style="text-align: left;" class="fragment"><strong>Event:</strong> <em>Bir şey oldu!</em></div>
-          <div style="text-align: left;" class="fragment">Mesela...</div>
-          <ul>
-            <li class="fragment"><code>click</code> &mdash; Bir elemente tıklandı.</li>
-            <li class="fragment"><code>mousemove</code> &mdash; Mouse ile elementin üzerinde geziliyor.</li>
-            <li class="fragment"><a href="http://api.jquery.com/category/events/" target="_blank">Tüm Eventler</a></li>
-          </ul>
-        </section>
+        </code></pre>
+        <p class="fragment">Expecto Patronum! <a href="http://harrypotter.wikia.com/wiki/Patronus_Charm" target="_blank">*</a></p>
+        <pre class="fragment"><code data-trim contenteditable class="html">
+&lt;body>
+ &lt;div id="myPrecious">You shall not pass!&lt;/div>
+&lt;/body>
+        </code></pre>
+      </section>
 
       <section>
-        <h3>jQuery &mdash; Event Handling (2)</h3>
+        <h3>Document Ready</h3>
+        <ul>
+          <li class="fragment">Bir web sayfasının yüklenmesi zaman alır.</li>
+          <li class="fragment">JavaScript yüklediği anda çalışır.</li>
+          <li class="fragment">Bazen web sayfasının yüklendiğinden emin olmak gerekir.</li>
+        </ul>
+        <pre class="fragment"><code  data-trim contenteditable class="javascript">
+$(document).ready(function() {
+  alert("Bu mesaj tüm sayfa yüklendikten sonra görünür.");
+});
+        </code></pre>
+      </section>
+
+      <section>
+        <h3>Eventler</h3>
+        <p class="fragment"><strong>Event:</strong> <em>Bir şey oldu!</em></p>
+        <p class="fragment">Mesela...</p>
+        <ul>
+          <li class="fragment"><code>click</code> &mdash; Bir elemente tıklandı.</li>
+          <li class="fragment"><code>mousemove</code> &mdash; Mouse ile elementin üzerinde geziliyor.</li>
+          <li class="fragment"><code>ready</code> &mdash; Bir şey hazır?</li>
+          <li class="fragment"><a href="http://api.jquery.com/category/events/" target="_blank">Tüm Eventler</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Event Handling</h3>
         <pre class="fragment"><code data-trim contenteditable class="html">
 &lt;div id="counter">not ready!&lt;/div>
 &lt;a id="increase" href="http://www.google.com/">Click me to increase&lt;/a>
@@ -697,17 +835,18 @@ $(document).ready(function() {
   var counterDiv = $("#counter");
   var increaseA = $("#increase");
 
-  counterDiv.text(counter);
+  /* init */
+  counterDiv.text(counter); /* Bu olmasaydı ne olurdu? */
 
   increaseA.click(function(event) {
-    event.preventDefault();
+    event.preventDefault(); /* Bu da nesi? */
     counter++;
     counterDiv.text(counter);
   });
 });
         </code></pre>
       </section>
-      </section>
+
       <section data-transition="linear" data-background-transition="slide"
                data-background="#FFF">
         <img src="img/ajax.jpg" class="no-style">
@@ -720,17 +859,27 @@ $(document).ready(function() {
           <li>Asenkron doğru, XML artık değil.</li>
           <li>Sayfayı yenilemeden sunucu ile bilgi alışverişi.</li>
         </ul>
+      </section>
 
+      <section>
+        <h3>jQuery'de Ajax</h3>
         <pre class="fragment stretch"><code data-trim contenteditable class="javascript">
 alert("submitting ajax");
 $.ajax({
   url: 'http://www.example.com/getUserList',
-  data: { count: 20, name: "Şeyda" },
+  data: {
+    count: 20,
+    name: "Şeyda"
+  },
+  method: "GET",
+  dataType: 'json',
   success: function (data) {
     /* { "users": [
             { "firstName": "Şeyda", "lastName": "Benzer" },
             { "firstName": "Şeyda", "lastName": "Bora"   }
-       ]} */
+          ]
+        }
+    */
     alert(data.users[0].firstName);
   },
   error: function(data) {
@@ -750,7 +899,7 @@ alert("submitted ajax");
         <h3>Angular.js nedir?</h3>
         <ul>
           <li>Bir <em>framework</em></li>
-          <li>DOM ile JavaScript arasında <strong>iki yönlü</strong> veri alışverişi sağlar.</li>
+          <li>DOM ile JavaScript arasında iki yönlü veri alışverişi olmasını savunur.</li>
           <li>Arayüz ile uygulama mantığı ayrı olmalıdır.</li>
           <li>Eventleri takip etme ve gerekli güncellemeleri yapma işini otomatize eder.<br />
             <iframe class="fragment" src="http://embed.plnkr.co/F8YIat5azshUjCinsQSL"
@@ -758,6 +907,35 @@ alert("submitted ajax");
           </li>
         </ul>
         <p class="fragment" style="text-align: left;"><small><em>Başka bir sürü özellik de sunar tabi...</em></small></p>
+      </section>
+
+      <section data-transition="linear" data-background-transition="slide"
+               data-background="img/abstract-bg.jpg">
+        <h1>Javascript demek<br />tarayıcı mı demek?</h1>
+        <h2>Bu kadarcık mı?</h2>
+      </section>
+
+      <section data-transition="linear" data-background-transition="slide"
+               data-background="img/nodejs-hd.png">
+      </section>
+
+      <section data-transition="linear" data-background-transition="slide"
+               data-background="#FFF">
+        <img src="img/tessel.jpg" class="no-style">
+      </section>
+      <section data-transition="linear" data-background-transition="slide">
+        <h3>Javascript ile embedded programlama!</h3>
+        <p class="fragment"><a href="http://tessel.io/" target="_blank">Tessel</a></p>
+        <pre class="fragment stretch"><code data-trim contenteditable class="javascript">
+var tessel = require('tessel');
+var servos = require('servo-pca9685').connect(tessel.port('A'));
+
+var degrees = 0;
+setInterval(function () {
+  servos.moveServo(1, degrees);
+  degrees = degrees == 0 ? 180 : 0;
+}, 500);
+        </code></pre>
       </section>
 
       <section data-background="#F1DA4E" data-transition="linear" data-background-transition="slide">
@@ -772,27 +950,6 @@ alert("submitted ajax");
           <li class="fragment zoom-in"><a style="color:#323230;" href="http://goo.gl/xvA6AT" target="_blank">Google Maps</em></a></li>
         </ol>
       </section>
-
-      <section data-transition="linear" data-background-transition="slide"
-               data-background="img/abstract-bg.jpg">
-        <h1>Javascript demek<br />tarayıcı mı demek?</h1>
-        <h2>Bu kadarcık mı?</h2>
-      </section>
-
-      <section data-transition="linear" data-background-transition="slide"
-               data-background="img/nodejs-hd.png">
-      </section>
-
-      <section data-transition="linear" data-background-transition="slide"
-               data-background="img/phonegap.jpg">
-      </section>
-
-      <section data-transition="linear" data-background-transition="slide"
-               data-background="#FFF">
-        <a href="http://tessel.io/" target="_blank"><img src="img/tessel.jpg" class="no-style"><br />
-          <img src="img/tessel-logo.jpg" class="no-style"></a>
-      </section>
-
       <section>
         <h3>Yeni başlayanlara tavsiyeler</h3>
         <ul>
@@ -818,44 +975,44 @@ alert("submitted ajax");
         <h1>Teşekkürler</h1>
         <h2>Umut Benzer</h2>
         <p><a href="http://www.ubenzer.com/" target="_blank">http://benzer.me/</a></p>
-        <p><a href="http://www.ubenzer.com/iletisim" target="_blank">umut@linovi.com</a></p>
+        <p><a href="http://www.ubenzer.com/iletisim" target="_blank">umut [et] benzer [nokta] me</a></p>
       </section>
 
     </div>
   </div>
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.min.js"></script>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
 
-    <script>
-      // Full list of configuration options available here:
-      // https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
+		<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
 
-        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-        transition: 'default',
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: 'default',
 
         multiplex: {
           // Example values. To generate your own, see the socket.io server instructions.
-          secret: null, // Obtained from the socket.io server. Gives this (the master) control of the presentation
+          secret: '13806238305276268529', // Obtained from the socket.io server. Gives this (the master) control of the presentation
           id: '00a8cae1a9d2e5ff', // Obtained from socket.io server
           url: 'revealjs.jit.su:80' // Location of socket.io server
         },
 
-        // Optional libraries used to extend on reveal.js
-        dependencies: [
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
           { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
-          { src: 'plugin/multiplex/client.js', async: true },
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-        ]
-      });
-    </script>
-  </body>
+          { src: 'plugin/multiplex/master.js', async: true },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+	</body>
 </html>
